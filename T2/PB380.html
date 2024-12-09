@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+        }
+
+        table {
+            float: left;
+            border: 1px solid black;
+            margin: 2px;
+            width: 50%;
+        }
+
+        #t1 {
+            background-color: lightblue;
+        }
+
+        #t2 {
+            background-color: lightgreen;
+        }
+
+        @media screen and (orientation: portrait) {
+            #t2 {
+                background-color: lightblue;
+            }
+
+            #t1 {
+                background-color: lightgreen;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table rules="all" id="t1">
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
+    </table>
+    <table rules="all" id="t2">
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
+    </table>
+</body>
+
+</html>

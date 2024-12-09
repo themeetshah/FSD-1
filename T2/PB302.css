@@ -1,0 +1,16 @@
+h1 {
+    font-size: 120%;
+    color: yellow;
+}
+
+.arial {
+    font-family: arial;
+    font-weight: bold;
+    text-indent: 3cm;
+    color: lime;
+}
+
+body {
+    background-image: url(imgs/PB302.png);
+    background-repeat: repeat-x;
+}

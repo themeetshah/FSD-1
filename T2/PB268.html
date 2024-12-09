@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>PB268</title>
+    <style>
+        #ad {
+            color: red;
+            font-size: 40px;
+            font-style: Arial;
+            animation: advertisement 7s ease-in-out 1s infinite alternate;
+            white-space: nowrap;
+        }
+
+        @keyframes advertisement {
+            0% {
+                transform: translatex(-100%);
+            }
+
+            50% {
+                transform: translatex(100%);
+            }
+
+            100% {
+                transform: translatex(-100%);
+            }
+        }
+
+        #banner {
+            padding: 5px;
+            position: relative;
+            background-color: lightgray;
+        }
+
+        #banner:hover {
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transform: translate(200px, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <p id="ad">Advertisement: SALE! SALE! SALE!</p>
+    </div>
+</body>
+
+</html>

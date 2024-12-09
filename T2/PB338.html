@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB338</title>
+    <style>
+        .pagination a {
+            border: 1px solid black;
+            margin: 5px 5px;
+            padding: 5px 15px;
+            text-decoration: none;
+            color: black;
+            transition-property: all;
+            transition-timing-function: ease-in-out;
+            transition-duration: 1s;
+        }
+
+        .pagination #active {
+            background-color: green;
+            color: white;
+        }
+
+        .pagination {
+            margin: 20px;
+        }
+
+        .pagination a:hover:not(#active) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" id="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+
+</html>

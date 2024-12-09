@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Text Overlay</title>
+    <style>
+        .image-container {
+            position: absolute;
+            /* Position container relative for overlaying text */
+            width: 50%;
+            /* Adjust as needed */
+            margin: auto;
+        }
+
+
+        .image-container img {
+            width: 100%;
+            opacity: 0.8;
+            /* Set image opacity */
+        }
+
+        .top-left {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            color: white;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .bottom-right {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            color: white;
+            padding: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="https://via.placeholder.com/800x400" alt="Example Image">
+        <div class="top-left">Top Left Text</div>
+        <div class="bottom-right">Bottom Right Text</div>
+    </div>
+</body>
+
+</html>

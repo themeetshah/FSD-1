@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>PB360</title>
+    <style>
+        #div {
+            width: 100px;
+            height: 100px;
+            animation: pos-col 4s ease 2s infinite reverse;
+            position: relative;
+        }
+
+        @keyframes pos-col {
+            0% {
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0px;
+                left: 100px;
+            }
+
+            50% {
+                background-color: green;
+                top: 100px;
+                left: 100px;
+            }
+
+            75% {
+                background-color: blue;
+                top: 100px;
+                left: 0px;
+            }
+
+            100% {
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div"></div>
+</body>
+
+</html>

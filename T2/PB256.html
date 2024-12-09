@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PB256</title>
+    <style>
+        #name:focus {
+            background-color: lightgreen;
+        }
+
+        #pass:hover,
+        #contact:hover {
+            font-size: larger;
+        }
+
+        #lmale:active,
+        #lfemale:active {
+            color: white;
+            background-color: blue;
+        }
+
+        #submit:hover,
+        #reset:hover {
+            font-style: italic;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name">
+        <br>
+        <br>
+        <label for="pass">Password: </label>
+        <input type="password" id="pass">
+        <br>
+        <br>
+        <label for="contact">Contact Number: </label>
+        <input type="text" id="contact">
+        <br>
+        <br>
+        <label for="gender">Gender: </label>
+        <input type="radio" id="male" name="gender">
+        <label for="male" id="lmale">Male </label>
+        <input type="radio" id="female" name="gender">
+        <label for="female" id="lfemale">FeMale </label>
+        <br>
+        <br>
+        <input type="submit" id="submit">
+        <input type="reset" id="reset">
+    </form>
+</body>
+
+</html>

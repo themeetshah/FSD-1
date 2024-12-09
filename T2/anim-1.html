@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document of solar system</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .d1{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 100px;
+            left: 100px;
+            border-radius: 50%;
+            border: 10px solid rgb(113, 113, 232);
+            border-left: 10px solid black;
+            animation-name: load;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 0ms;
+        }
+        .d3{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 100px;
+            left: 300px;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .d2{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            top: 100px;
+            left: 350px;
+            border-radius: 50%;
+            background-image: conic-gradient(rgb(73, 73, 213),rgb(87, 209, 87));
+            transition: all;
+            transform: rotate(360deg);
+            animation-name: revolve;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 1ms;
+        }
+        .d4{
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            top: 210px;
+            left: 420px;
+            
+            background-image: linear-gradient(white,rgb(246, 246, 60),rgb(183, 132, 21) 80%);
+            transition: all;
+            animation-name: sun;
+            animation-duration: 1s;
+            animation-delay: 1ms;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes load{
+            from{ transform: rotate(0deg);}
+            to{ transform: rotate(360deg);}
+        }
+        @keyframes revolve{
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(360deg);
+                top: 80px;
+                left: 450px;
+            }
+            20%{
+                transform: rotate(720deg);
+                top: 120px;
+                left: 520px;
+            }
+            30%{
+                transform: rotate(1080deg);
+                top: 180px;
+                left: 560px;
+            }
+            40%{
+                transform: rotate(1440deg);
+                top: 220px;
+                left: 580px; 
+            }
+            50%{
+                transform: rotate(1800deg);
+                top: 300px;
+                left: 560px;
+            }
+            60%{
+                transform: rotate(2160deg);
+                top: 350px;
+                left: 530px;
+            }
+            70%{
+                transform: rotate(2520deg);
+                top: 380px;
+                left: 480px;
+            }
+            80%{
+                transform: rotate(2880deg);
+                top: 365px;
+                left: 380px;
+            }
+            90%{
+                transform: rotate(3000deg);
+                top: 300px;
+                left: 300px;
+            }
+            95%{
+                transform: rotate(3240deg);
+                top: 200px;
+                left: 280px;  
+            }
+            100%{
+                transform: rotate(0deg);
+                top: 100px;
+                left: 350px
+            }
+        }
+        @keyframes sun{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d3"></div>
+    <div class="d2"></div>
+    <div class="d4"></div>
+</body>
+</html>

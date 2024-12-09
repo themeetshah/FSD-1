@@ -1,0 +1,12 @@
+#a::first-letter {
+    font-size: 160%;
+    color: red;
+}
+
+#a::after {
+    content: "😊";
+}
+
+#b::before {
+    content: "😊";
+}

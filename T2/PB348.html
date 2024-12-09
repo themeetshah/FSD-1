@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>PB348</title>
+    <style>
+        table {
+            height: 99%;
+            margin: 1px;
+        }
+
+        @media screen and (orientation: landscape) {
+            #a {
+                background-color: lightgreen;
+            }
+
+            #b {
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (orientation: portrait) {
+            #b {
+                background-color: lightgreen;
+            }
+
+            #a {
+                background-color: yellow;
+            }
+        }
+
+        @media screen {
+            table {
+                width: 49%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <table border="2px" rules="all" id="a">
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
+    </table>
+    <table border="2px" rules="all" id="b">
+        <tr>
+            <td>R1C1</td>
+            <td>R1C2</td>
+            <td>R1C3</td>
+        </tr>
+        <tr>
+            <td>R2C1</td>
+            <td>R2C2</td>
+            <td>R2C3</td>
+        </tr>
+        <tr>
+            <td>R3C1</td>
+            <td>R3C2</td>
+            <td>R3C3</td>
+        </tr>
+    </table>
+</body>
+
+</html>
