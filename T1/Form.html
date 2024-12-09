@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body bgcolor="lightgrey">
+    <form action="Table2.html">
+        <fieldset>
+            <legend align="center">Login Form</legend>
+            <label for="uname1">Username:</label>
+            <input type="text" id="uname" maxlength="6" required>
+            <br>
+            <br>
+            <label for="pass1">Password:</label>
+            <input type="password" id="pass" minlength="6" required>
+            <br>
+            <br>
+            <input type="checkbox" id="cbox">
+            <label for="cbox">Remember Me</label>
+            <br>
+            <br>
+            <input type="submit" id="login" value="Login">
+            <input type="reset" id="Cancel" value="Cancel">
+            <input type="button" id="signn" value="Sign Up">
+        </fieldset>
+        <br>
+    </form>
+    <form method="get">
+        <fieldset>
+            <legend align="center">Sign Up Form</legend>
+            <label for="uname2">Username:</label>
+            <input type="text" id="uname" placeholder="Enter Username" maxlength="6">
+            <br>
+            <br>
+            <label for="pass2">Password:</label>
+            <input type="password" id="pass" placeholder="acha wala dena bhai" minlength="6">
+            <br>
+            <br>
+            Gender: <input type="radio" name="r2" id="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" name="r2" id="female">
+            <label for="female">Female</label>
+            <br>
+            <br>
+            <label for="search">search: </label>
+            <input type="search" id="search" autofocus>
+            <br>
+            <br>
+            <label for="email">email: </label>
+            <input type="email" id="email">
+            <br>
+            <br>
+            <label for="tel">tel: </label>
+            <input type="tel" id="tel" readonly>
+            <br>
+            <br>
+            <label for="add">Address: </label>
+            <textarea placeholder="Input Address" id="add" rows="5" cols="55"></textarea>
+            <br>
+            <br>
+            <label for="add">City: </label>
+            <select id="city">
+                <option selected hidden>---Select City---</option>
+                <optgroup label="IT Pops">
+                    <option disabled>Bombay</option>
+                    <option>Ahd</option>
+                    <option>Hyd</option>
+                </optgroup>
+                <optgroup label="Pops">
+                    <option>Pune</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="date">date: </label>
+            <input type="date" id="date" min="2024-10-05" max="2024-10-11">
+            <br>
+            <br>
+            <label for="time">time: </label>
+            <input type="time" id="time">
+            <br>
+            <br>
+            <label for="week">week: </label>
+            <input type="week" id="week">
+            <br>
+            <br>
+            <label for="month">month: </label>
+            <input type="month" id="month">
+            <br>
+            <br>
+            <label for="number">number: </label>
+            <input type="number" id="number" min="5" max="11" step="2">
+            <br>
+            <br>
+            <label for="range">range: </label>
+            0<input type="range" id="range" min="0" max="100" step="1" value="25">100
+            <br>
+            <br>
+            <label for="color">Color: </label>
+            <input type="color" id="color">
+            <br>
+            <br>
+            <input type="file" id="file">
+            <br>
+            <br>
+            <input type="submit" id="s2" value="Sign Up">
+            <input type="submit" id="s3" value="click krke bataa" disabled>
+        </fieldset>
+    </form>
+</body>
+
+</html>

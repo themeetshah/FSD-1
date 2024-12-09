@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <form action="Login.html">
+        <fieldset>
+            <fieldset>
+                <legend align="center">Personal</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="fname">First Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="fname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lname">Last Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" id="lname" required>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                Gender: <input type="radio" name="r2" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="r2" id="female">
+                <label for="female">Female</label>
+                <br>
+                <br>
+                <label for="color">Color: </label>
+                <input type="color" id="color">
+                <br>
+                <br>
+                <label for="date">Birthdate: </label>
+                <input type="date" id="date" min="05-10-2024" max="11-10-2024" required>
+                <br>
+                <br>
+                <label for="file">Profile: </label>
+                <input type="file" id="file" required>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend align="center">Education</legend>
+                <table>
+                    <tr>
+                        <td>
+                            Highest Education:
+                        </td>
+                        <td>
+                            <input type="radio" name="ed" id="SSC">
+                            <label for="SSC">SSC</label>
+                            <br>
+                            <input type="radio" name="ed" id="HSC">
+                            <label for="HSC">HSC</label>
+                            <br>
+                            <input type="radio" name="ed" id="BE">
+                            <label for="BE">BE</label>
+                            <br>
+                            <input type="radio" name="ed" id="ME">
+                            <label for="ME">ME</label>
+                            <br>
+                            <input type="radio" name="ed" id="PHD">
+                            <label for="PHD">PHD</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <center>
+                <input type="submit" id="s2" value="Submit">
+                <input type="reset" id="s3" value="Reset">
+            </center>
+        </fieldset>
+    </form>
+</body>
+
+</html>
