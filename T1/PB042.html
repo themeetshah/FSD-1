@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>PB042</title>
+</head>
+
+<body bgcolor="lightblue">
+    <h1>Problem 42</h1>
+    <form>
+        <fieldset>
+            <legend align="center">
+                <h2>User Details</h2>
+            </legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name..." required>
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" minlength="6" placeholder="Enter a password..." required>
+            <br>
+            <br>
+            <label for="address">Address:</label>
+            <textarea id="address" rows="3" cols="20" placeholder="Enter your address..." required></textarea>
+            <br>
+            <br>
+            <label for="subject">Subject:</label>
+            <input type="radio" id="math" name="subject">
+            <label for="math" name="subject">Math</label>
+            <input type="radio" id="physics" name="subject">
+            <label for="physics" name="subject">Physics</label>
+            <input type="radio" id="chemistry" name="subject">
+            <label for="chemistry" name="subject">Chemistry</label>
+            <br>
+            <br>
+            <label for="author">Author:</label>
+            <select>
+                <option selected hidden>---Select author---</option>
+                <optgroup label="Novel">
+                    <option>William Shakespeare</option>
+                    <option>Agatha Christie</option>
+                    <option>Barbara Cartland</option>
+                </optgroup>
+                <optgroup label="Story book">
+                    <option>Anna Sewell</option>
+                    <option>Daniel Defoe</option>
+                    <option>RL Stevenson</option>
+                </optgroup>
+                <optgroup label="Comics">
+                    <option>Jack Kirby</option>
+                    <option>John Byrne</option>
+                    <option>Frank Miller</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" rows="2" cols="45"
+                placeholder="Enter your comments for the last book you read..."></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
