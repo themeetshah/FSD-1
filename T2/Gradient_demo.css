@@ -1,0 +1,111 @@
+div {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+#a {
+    float: left;
+    background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+}
+
+#b {
+    float: left;
+    background-image: linear-gradient(to right, indigo, violet);
+}
+
+#g {
+    float: left;
+    background-image: radial-gradient(yellow, red);
+}
+
+#h {
+    float: left;
+    background-image: linear-gradient(45deg, red, blue);
+}
+
+#i {
+    float: left;
+    background-image: repeating-radial-gradient(black 10%, red 12%);
+}
+
+#j {
+    float: left;
+    background-image: radial-gradient(yellow, black, red);
+}
+
+#k {
+    float: left;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at top right, blue, pink, red);
+}
+
+#l {
+    float: left;
+    /* 1 hard line */
+    background-image: conic-gradient(blue, lightblue);
+}
+
+#m {
+    float: left;
+    /* no hard line */
+    background-image: conic-gradient(blue, pink, red, blue);
+}
+
+#n {
+    float: left;
+    /* no hard line */
+    background-image: repeating-conic-gradient(blue 10%, pink 20%, red 30%);
+}
+
+#o {
+    float: left;
+    /* no hard line */
+    background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg, blue 360deg);
+}
+
+#p {
+    float: left;
+    border-radius: 50%;
+    background-image: conic-gradient(red 0deg, red 60deg, yellow 60deg, yellow 120deg, red 120deg, red 180deg, yellow 180deg, yellow 240deg, red 240deg, red 300deg, yellow 300deg, yellow 360deg);
+}
+
+#c {
+    clear: left;
+    float: left;
+    margin: 0px;
+    border: 0px;
+    background-image: linear-gradient(to bottom right, blue, violet);
+}
+
+#e {
+    float: left;
+    margin: 0px;
+    border: 0px;
+    background-image: linear-gradient(to bottom left, blue, violet);
+}
+
+#d {
+    clear: left;
+    float: left;
+    margin: 0px;
+    border: 0px;
+    background-image: linear-gradient(to top right, blue, violet);
+}
+
+#f {
+    float: left;
+    background-image: linear-gradient(to top left, blue, violet);
+}
+
+#container {
+    padding-left: 10px;
+    padding-top: 10px;
+    /* border: 1px dashed black; */
+    height: auto;
+    width: auto;
+    clear: left;
+    float: left;
+    align-content: center;
+}

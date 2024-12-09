@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination a{
+            color: black;
+            font-size: 40px;
+            padding: 5px 15px;
+            text-decoration: none;
+        }
+        .pagination1 a{
+            margin: 10px 2px;
+            color: black;
+            font-size: 20px;
+            padding: 5px 15px;
+            text-decoration: none;
+            transition-property: all;
+        }
+        .pagination2 a{
+            border: 1px solid black;
+            float: left;
+            color: black;
+            font-size: 20px;
+            padding: 5px 15px;
+            text-decoration: none;
+            transition-property: all;
+        }
+        .active{
+            border: 5px double red;
+            background-color: gainsboro;
+            color: orange;
+        }
+        .pagination1 a:hover:not(.active){
+            background-color: orange;
+            text-decoration: underline;
+        }
+        .pagination2 a:hover:not(.active){
+            background-color: orange;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <div class="pagination1">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <br>
+    <div class="pagination2">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#" class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>

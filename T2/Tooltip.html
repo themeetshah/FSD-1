@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a{
+            height: 120px;
+            width: 120px;
+            border: 2px solid red;
+            padding: 15px;
+            /* display: inline-block/block/none; */
+            visibility: hidden;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            transition: all 2000ms ease-in-out;
+        }
+
+        .tooltiptext {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            width: 150px;
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 2px;
+            border-radius: 10px 0px 10px 0px;
+            transition: opacity 2000ms ease-in-out;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="b">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati ducimus nam iure saepe. Consequuntur tempora quia pariatur eaque minus quam quis voluptas enim praesentium non ratione, libero beatae maxime sunt reiciendis facilis voluptatem vero ex debitis sed molestiae velit optio! Minus, possimus odio. Eius sint laudantium impedit culpa, quos non reiciendis! Modi in ea accusamus nesciunt asperiores, voluptate distinctio earum harum porro molestiae, est quibusdam culpa repudiandae odio, nobis excepturi placeat. Magnam consectetur quasi deleniti ex nesciunt quibusdam alias ab. Nihil consequatur, adipisci, dolorem quidem praesentium incidunt debitis perspiciatis accusamus illum iusto sed commodi cum, harum necessitatibus ea nam distinctio voluptatem nesciunt explicabo sunt dicta voluptatum repellat non error! Eveniet aliquid veritatis totam voluptatem architecto impedit dicta expedita! Fugit atque excepturi deleniti ullam sit vitae libero in beatae laboriosam nostrum aliquid dicta obcaecati inventore mollitia perspiciatis nihil illo recusandae, ratione natus a. Nihil temporibus culpa voluptatum beatae, iure deserunt autem, minima ea, delectus quia quam laboriosam quis? Voluptates deleniti quae sunt, harum, hic expedita, magni doloremque exercitationem possimus et iste reprehenderit itaque illo? Veniam, praesentium similique incidunt quod perferendis aperiam nihil laborum, rem voluptatem provident qui ipsam sint fugit voluptates earum dicta fugiat deserunt impedit? Illo tenetur sapiente sit?
+        <span id="a">My Box</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur in sapiente laudantium, nisi reiciendis illo. Laudantium, explicabo! Necessitatibus libero voluptate amet nesciunt nulla quae totam illo accusantium illum perferendis itaque quidem quis, magnam nemo, accusamus molestias enim quisquam soluta! In aspernatur saepe vitae minima ad voluptates, reprehenderit numquam praesentium fugit deleniti perferendis cupiditate nihil id repellat modi nesciunt sed ipsam. Sed animi neque ipsum ducimus commodi at, deleniti corrupti voluptate voluptas assumenda earum facilis cumque, obcaecati eveniet illum dicta maiores possimus eum molestias similique illo vitae velit rerum eos? Deserunt totam rerum ipsam, quibusdam sunt eaque nihil sit a nesciunt debitis nostrum exercitationem mollitia rem ratione quaerat et! Libero, esse? Ipsam nihil accusantium expedita velit aliquid amet eius eveniet cum perferendis ullam animi odio, repellendus tempora totam fuga dicta ratione omnis temporibus deleniti corrupti quidem eligendi a ipsa? Error vel quas saepe doloremque ipsa rerum voluptate dolor consequatur officia, quaerat eius maxime odit explicabo laborum architecto, repudiandae hic ratione aliquid quasi, harum consectetur iste obcaecati nihil. Ullam veniam nisi, distinctio voluptatibus, nesciunt velit minima incidunt ad a quo alias quibusdam praesentium nemo. Fugiat a voluptatem eligendi repudiandae, pariatur numquam rerum cumque sequi quis ea! Reprehenderit perspiciatis repellat similique architecto alias?<br><br>
+    </div>
+    <div class="tooltip">
+        Animals
+        <span class="tooltiptext">Wild are very wild</span>
+    </div>
+</body>
+</html>

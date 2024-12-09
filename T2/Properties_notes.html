@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Properties:</h2>
+    <pre>
+        1. color: name|hexcode|rgb(r,g,b)|hsl(h,s,l);
+            --hsl: Hue, Saturation, Lightness
+            --#553322 = #532
+            --rgb(0-255,0-255,0-255)
+            --hue(0 to 360), Saturation(%), Lightness(%)
+            --rgba(0-255,0-255,0-255,0-1), hsla(0-360,%,%,0-1): a=alpha (for color transparency)
+
+        2. background:
+            i. background-color: " ;
+            ii. background-image: url(address);
+            iii. background-repeat: repeat-x|repeat-y|no-repeat|repeat; (by default: repeat)
+            iv. if no-repeat:
+                    background-position-x: left|center|right;
+                    background-position-y: top|center|bottom;
+                                        OR
+                    background-position: top left|top center|top right|center left|center|center right|bottom left|bottom center|bottom right;
+                    
+            shorthand: background: red url(a.jpg) repeat-x center;
+        
+        3. Text:
+            i. color: name|hex|rgb|hsl|rgba|hsla;
+            ii. text-align: left|center|right|justify;
+            iii. text-decoration-line: none|underline|overline|line-through;
+                 text-decoration-style: solid|double|dashed|dotted|wavy;
+                 text-decoration-color: name|etc.
+                 text-decoration-thickness: medium|thick|thin|px;
+                 shorthand: text-decoration: text-decoration-line text-decoration-color text-decoration-style text-decoration-thickness;
+            iv. direction: ltr|rtl;
+                unicode-bidi: bidi-override; (to mirror)
+            v. text-transform: none|capitalize|uppercase|lowercase;
+            vi. vertical-align: baseline|sub|super|top|text-top|middle|bottom|text-bottom;
+            vii. text-indent: px;
+            viii. word-spacing: px;
+            ix. letter-spacing: px;
+
+        4. Font:
+            i. font-family: serif|sans-serif|monospace|cursive|; (multiple names separated by comma)
+            ii. font-style: normal|italic|oblique;
+            iii. font-weight: normal|bold|bolder|100px-900px;
+            iv. font-variant: normal|small-caps;
+            v. font-size: px|cm|em|rem|vw;  
+                -- em: ephimeral meter, {em*current parent size} px
+                -- rem: root ephimeral meter, {rem*root parent size} px
+                -- vw: viewport width, {vw% of device-width} px
+            shorthand: font: style variant weight size family;
+</body>
+
+</html>

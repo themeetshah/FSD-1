@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>05_MeetS_A1</h1>
+    </center>
+    <strong>Less the generality, less the priority</strong>
+    <br>
+    <strong>More specific, more priority</strong>
+    <pre>
+        <h1>Types of Selectors:</h1>
+        1. Simple Selectors
+        2. Combinator Selectors
+        3. Pseudo Class Selectors(Imaginary)
+        4. Pseudo Element Selectors(Imaginary)
+        5. Attribute Selectors
+    </pre>
+    <pre>
+        <h2>Simple Selectors:</h2>
+        1. Element -> h2, p, div
+        2. Id selector -> id="" :it must not start with number
+        3. Class selector -> class="" 
+            -- it can start with number 
+            -- if style conflicting {
+                   je class niche hoy e apply thase
+               }
+            -- id>class
+        4. Multiple -> i. Element#id
+                       ii. Element.class 
+                       iii. Element, Element
+        5. * -> Universal
+    </pre>
+    </pre>
+    <pre>
+        <h2>Combinator Selectors:</h2>
+        1. Child (>)
+        2. Descendent ( )
+        3. Adjacent Sibling (+) 
+        3. General Sibling (~)  
+    </pre>
+    <pre>
+        <h2>Pseudo Class Selectors:</h2>
+        Syntax: selector:pseudo-class
+            -- it must be in either internal or external styling
+            -- {maintain the following order}
+                i. a : link   <!--when link hasn't been visited-->
+                ii. a : visited   <!--when link has been visited-->
+                iii. a : hover --- div : hover   <!--when link is hovered-->
+                iv. a : active   <!--when link is kept pressed-->
+                v. input : focus
+                vi. input : checked
+    </pre>
+    <pre>
+        <h2>Pseudo Element Selectors:</h2>
+        Syntax: element::pseudo-element
+            -- it must be in either internal or external styling
+            -- {maintain the following order}
+                i. p::first-line
+                ii. p::first-letter
+                iii. ::before
+                iv. ::after
+                v. ::marker
+                vi. ::selection
+    </pre>
+    <pre>
+        <h2>Attribute Selectors:</h2>
+        1. a[target] {
+            color:grey;
+           }
+        2. a[target:black] {
+            color:red;
+           }
+        3. div[class=^ab] {
+            color:red;
+           }
+    </pre>
+</body>
+
+</html>

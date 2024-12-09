@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: var(--rochan_girgit);
+        }
+        :root{
+            --rochan_girgit: rgb(220, 178, 99);
+        }
+        .btn{
+            background-color: var(--rochan_girgit);
+            cursor:grab;
+            /* cursor: none|pointer|help|alias|zoom-out|grab|grabbing|etc..; */
+            color: black;
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+            margin: 5px;
+            text-decoration: none;
+            border: 2px solid black;
+            --rochan_girgit: #adff2f;
+        }
+        .btn:active{
+            cursor: grabbing;
+            --rochan_girgit: orange;
+        }
+        .btn:hover{
+            --rochan_girgit: yellow;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click Me</button>
+    <input type="button" value="Click Me" class="btn">
+    <a href="#" class="btn">Click Me</a>
+</body>
+</html>

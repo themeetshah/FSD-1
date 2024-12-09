@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a3 {
+            height: 600px;
+            width: 600px;
+            background-image: url(logo.png), url(logo1.png), url(logo1.png), url(logo1.png), url(logo1.png);
+            background-repeat: no-repeat;
+            background-position: center, top left, bottom right, top right, bottom left;
+        }
+
+        #h1 {
+            text-align: center;
+            padding: 90px;
+            text-decoration-line: underline overline line-through;
+            text-decoration-style: dashed;
+        }
+
+        #h2 {
+            text-align: left;
+            padding: 60px;
+            text-decoration-line: underline overline line-through;
+            text-decoration-style: dotted;
+        }
+
+        #h3 {
+            text-align: center;
+            padding: 60px;
+            text-decoration-line: underline overline line-through;
+            text-decoration-style: wavy;
+            direction: rtl;
+        }
+
+        #h4 {
+            text-align: center;
+            padding: 60px;
+            text-decoration-line: underline overline;
+            text-decoration-style: wavy;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        #a4 {
+            font-size: 1.1em;
+            text-transform: capitalize;
+            font-family: cursive;
+            font-style: oblique;
+            font-weight: 800;
+            font-variant: small-caps;
+        }
+
+        #a5 {
+            font-size: 20px;
+            font-variant: small-caps;
+        }
+
+        #a5 img {
+            vertical-align: sub;
+        }
+
+        #a6 {
+            text-indent: 30px;
+            word-spacing: 10px;
+            letter-spacing: 5px;
+            font: italic small-caps 100 20px Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="a3">
+        <h1 id="h1">Hello</h1>
+        <h1 id="h2">Hello</h1>
+        <h1 id="h3">Hello</h1>
+    </div>
+    <h1 id="h4">NAMRA</h1>
+    <div id="a4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos amet quae similique doloremque sapiente
+        cupiditate obcaecati odio tempora, veniam alias.</div>
+    <br>
+    <div id="a5">Lorem ipsum dolor<img src="logo1.png" height="10" width="30"> sit amet.</div>
+    <br>
+    <div id="a6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolore! Animi quibusdam dolorem iusto,
+        magnam perspiciatis dolore est consequuntur tempore.</div>
+</body>
+
+</html>

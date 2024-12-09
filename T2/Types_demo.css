@@ -1,0 +1,24 @@
+body {
+    background-color: mediumseagreen;
+}
+
+h4 {
+    color: yellow;
+    background-color: green;
+    text-align: center;
+}
+
+div p {
+    visibility: hidden;
+}
+
+div {
+    color: purple;
+    font-weight: bold;
+}
+
+h3 {
+    color: red;
+    background-color: blue;
+    text-align: center;
+}

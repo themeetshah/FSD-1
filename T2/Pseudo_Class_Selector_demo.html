@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: violet;
+        }
+
+        .link2:link {
+            color: rgb(175, 1, 175);
+        }
+
+        a#link2 {
+            color: lime;
+        }
+
+        a.link2 {
+            color: gold;
+        }
+
+        div:hover {
+            color: magenta;
+            background-color: black;
+        }
+
+        #fname:focus {
+            text-transform: uppercase;
+            background-color: #02eb02;
+            color: red;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            border: 4px black solid
+        }
+
+        input:checked {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com" target="_blank">Go To google</a>
+    <br>
+    <a href="https://accounts.google.com" target="_blank" class="link2">Go To accounts</a>
+    <br>
+    <a href="https://accounts.google.com" target="_blank" id="link2">Go To accounts</a>
+    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores exercitationem tempore facilis ad,
+        voluptatibus magnam aut deleniti earum tenetur et!</div>
+    <br>
+    <form>
+        First Name: <input type="text" id="fname">
+        <br>
+        <br>
+        Last Name: <input type="text" id="lname">
+        <br>
+        <br>
+        <input type="radio" name="gender" id="male" checked>Male
+        <input type="radio" name="gender" id="female">Female
+        <br>
+        <br>
+        <input type="submit" value="LOGIN">
+        <input type="reset" value="RESET">
+    </form>
+</body>
+
+</html>

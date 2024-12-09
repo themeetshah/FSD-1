@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            background-color: lime;
+        }
+
+        p::first-letter {
+            color: red;
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        p::selection {
+            color: white;
+            background-color: red;
+        }
+
+        ol li::marker {
+            color: red;
+        }
+
+        ol li {
+            font-size: 30px;
+        }
+
+        h1::before {
+            content: url(logo.png);
+        }
+
+        h1::after {
+            content: " bye";
+            color: brown;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center"><u>HEADING</u></h1>
+    <ol type="1">
+        <li><b>item1</b></li>
+        <li><b>item2</b></li>
+        <li>item3</li>
+        <li>item4</li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae odit earum aliquam suscipit. Iusto quas
+        nulla temporibus vel nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae odit earum aliquam suscipit. Iusto quas
+        nulla temporibus vel nesciunt.</p>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a[target] {
+            color: grey;
+        }
+
+        a[target=_blank] {
+            color: red;
+        }
+
+        a[target=_self] {
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com">Go To google</a>
+    <br>
+    <a href="https://accounts.google.com" target="_parent" class="link2">Go To accounts</a>
+    <br>
+    <a href="https://accounts.google.com" target="_self" class="link2">Go To accounts</a>
+    <br>
+    <a href="https://accounts.google.com" target="_blank" class="link2">Go To accounts</a>
+</body>
+
+</html>

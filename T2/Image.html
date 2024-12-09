@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a1{
+            /* responsive */
+            height: auto;
+            max-width: 100%;
+
+            /* rounded */
+            border-radius: 0%;
+            
+            /* transparent */
+            opacity: 0.69;
+
+            /* flip */
+            transform: scaley(-1);
+        }
+
+        /* thumbnail */
+        #a2{
+            height: 200px;
+            width: 200px;
+            
+            border: 2px solid gray;
+            padding: 15px;
+            border-radius: 50px;
+        }
+        #a2:hover{
+            box-shadow: 10px 10px 5px 5px rgba(52, 52, 56, 0.3)
+            /* box-shadow: position size rgba/hsla */
+        }
+    </style>
+</head>
+<body>
+    <img id="a3" src="jetha.png">
+    <br>
+    <img id="a1" src="jetha.png">
+    <br>
+    <br>
+    <a href="hp.png">
+        <img id="a2" src="img.png">
+    </a>
+</body>
+</html>
