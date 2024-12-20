@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="container ms-2">
+        <form class="was-validated">
+            <fieldset>
+                <legend>Signup Form 255,234,128</legend>
+
+                <label for="fname" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter first Name" required>
+                <!-- form-control-lg/form-control-sm -->
+                
+                <div class="valid-feedback">
+                    Successfully Entered Fname!
+                </div>
+
+                <div class="invalid-feedback">
+                    Enter Fname!
+                </div>
+                <!-- <br> -->
+                
+                <label for="lname" class="form-label">Last Name:</label>
+                <input type="text" class="form-control form-control-plaintext bg-white" id="lname" placeholder="Enter Last Name" required>
+
+                <div class="valid-feedback">
+                    Successfully Entered Lname!
+                </div>
+
+                <div class="invalid-feedback">
+                    Enter Lname!
+                </div>
+                <!-- Put everything in diff div -->
+                <!-- <br> -->
+                
+                <label for="email" class="form-label ">Email:</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="email">
+                    <input type="text" class="form-control bg-dark text-white w-25" value="@mail.ljku.edu.in" disabled>
+                </div>
+                <div class="form-text">Your email-ID must be active!</div>
+
+                <br>
+                
+                <label for="num" class="form-label">Number:</label>
+                <input type="tel" class="form-control" id="num" pattern="\d{10}">
+
+                <br>
+                
+                <label for="pr" class="form-label">Price Range:</label>
+                <input type="range" class="form-range" id="pr" value="50">
+
+                <br>
+                
+                <label for="fc" class="form-label">Favorite Color:</label>
+                <input type="color" class="form-control form-control-color" id="fc" value="#44FF00">
+
+                <br>
+                
+                <label for="gen" class="form-label">Gender:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="M" name="gen">
+                    <label for="M" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="F" name="gen">
+                    <label for="F" class="form-check-label">Female</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="dnd" name="gen">
+                    <label for="dnd" class="form-check-label">Do no Disclose</label>
+                </div>
+
+                <br>
+                
+                <label for="hob" class="form-label">Hobbies:</label>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="Dance" name="hob">
+                    <label for="Dance" class="form-check-label">Dancing</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="Swim" name="hob">
+                    <label for="Swim" class="form-check-label">Swimming</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input type="checkbox" class="form-check-input" id="Watch" name="hob">
+                    <label for="Watch" class="form-check-label">Binge Watching</label>
+                </div>
+                
+                <br>
+                
+                <label for="add" class="form-label">Address:</label>
+                <textarea id="add" class="form-control" placeholder="Enter Address"></textarea>
+                
+                <br>
+                
+                <label for="country" class="form-label">Country:</label>
+                <select id="country" class="form-select">
+                    <option selected hidden>--Select Country</option>
+                    <option>India</option>
+                    <option>Russia</option>
+                    <option>USA</option>
+                </select>
+                
+                <br>
+                
+                <input type="submit" class="bg-success" value="Save">
+
+                <input type="reset" class="bg-danger" value="Reset">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html> 
