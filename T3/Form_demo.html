@@ -12,110 +12,147 @@
     <div class="container ms-2">
         <form class="was-validated">
             <fieldset>
-                <legend>Signup Form 255,234,128</legend>
-
-                <label for="fname" class="form-label">First Name:</label>
-                <input type="text" class="form-control" id="fname" placeholder="Enter first Name" required>
-                <!-- form-control-lg/form-control-sm -->
+                <legend>Signup Form</legend>
+                <div class="container mt-1" id="firstname">
+                    <label for="fname" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter first Name" required>
+                    <!-- form-control-lg/form-control-sm -->
+                    
+                    <div class="valid-feedback">
+                        Successfully Entered Fname!
+                    </div>
+                    
+                    <div class="invalid-feedback">
+                        Enter Fname!
+                    </div>
+                </div>
                 
-                <div class="valid-feedback">
-                    Successfully Entered Fname!
+                <div class="container mt-1" id="lastname">
+                    <label for="lname" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control form-control-plaintext bg-white" id="lname" placeholder="Enter Last Name" required>
+    
+                    <div class="valid-feedback">
+                        Successfully Entered Lname!
+                    </div>
+    
+                    <div class="invalid-feedback">
+                        Enter Lname!
+                    </div>
                 </div>
 
-                <div class="invalid-feedback">
-                    Enter Fname!
+                <div class="container mt-1" id="mail">
+                    <label for="email" class="form-label ">Email:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="email">
+                        <input type="text" class="form-control bg-dark text-white w-25" value="@mail.ljku.edu.in" disabled>
+                    </div>
+                    <div class="form-text">Your email-ID must be active!</div>
                 </div>
-                <!-- <br> -->
                 
-                <label for="lname" class="form-label">Last Name:</label>
-                <input type="text" class="form-control form-control-plaintext bg-white" id="lname" placeholder="Enter Last Name" required>
-
-                <div class="valid-feedback">
-                    Successfully Entered Lname!
-                </div>
-
-                <div class="invalid-feedback">
-                    Enter Lname!
-                </div>
-                <!-- Put everything in diff div -->
-                <!-- <br> -->
-                
-                <label for="email" class="form-label ">Email:</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="email">
-                    <input type="text" class="form-control bg-dark text-white w-25" value="@mail.ljku.edu.in" disabled>
-                </div>
-                <div class="form-text">Your email-ID must be active!</div>
-
-                <br>
-                
-                <label for="num" class="form-label">Number:</label>
-                <input type="tel" class="form-control" id="num" pattern="\d{10}">
-
-                <br>
-                
-                <label for="pr" class="form-label">Price Range:</label>
-                <input type="range" class="form-range" id="pr" value="50">
-
-                <br>
-                
-                <label for="fc" class="form-label">Favorite Color:</label>
-                <input type="color" class="form-control form-control-color" id="fc" value="#44FF00">
-
-                <br>
-                
-                <label for="gen" class="form-label">Gender:</label>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="M" name="gen">
-                    <label for="M" class="form-check-label">Male</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="F" name="gen">
-                    <label for="F" class="form-check-label">Female</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="dnd" name="gen">
-                    <label for="dnd" class="form-check-label">Do no Disclose</label>
+                <div class="container mt-1" id="number">
+                    <label for="num" class="form-label">Number:</label>
+                    <input type="tel" class="form-control" id="num" pattern="\d{10}">
                 </div>
 
-                <br>
-                
-                <label for="hob" class="form-label">Hobbies:</label>
-                <div class="form-check form-switch">
-                    <input type="checkbox" class="form-check-input" id="Dance" name="hob">
-                    <label for="Dance" class="form-check-label">Dancing</label>
-                </div>
-                <div class="form-check form-switch">
-                    <input type="checkbox" class="form-check-input" id="Swim" name="hob">
-                    <label for="Swim" class="form-check-label">Swimming</label>
-                </div>
-                <div class="form-check form-switch">
-                    <input type="checkbox" class="form-check-input" id="Watch" name="hob">
-                    <label for="Watch" class="form-check-label">Binge Watching</label>
+                <div class="container mt-1" id="price">
+                    <label for="pr" class="form-label">Price Range:</label>
+                    <input type="range" class="form-range" id="pr" value="50">
                 </div>
                 
-                <br>
-                
-                <label for="add" class="form-label">Address:</label>
-                <textarea id="add" class="form-control" placeholder="Enter Address"></textarea>
-                
-                <br>
-                
-                <label for="country" class="form-label">Country:</label>
-                <select id="country" class="form-select">
-                    <option selected hidden>--Select Country</option>
-                    <option>India</option>
-                    <option>Russia</option>
-                    <option>USA</option>
-                </select>
-                
-                <br>
-                
-                <input type="submit" class="bg-success" value="Save">
+                <div class="container mt-1" id="color">
+                    <label for="fc" class="form-label">Favorite Color:</label>
+                    <input type="color" class="form-control form-control-color" id="fc" value="#44FF00">
+                </div>
 
-                <input type="reset" class="bg-danger" value="Reset">
+                <div class="container mt-1" id="gender">
+                    <label for="gen" class="form-label">Gender:</label>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="M" name="gen">
+                        <label for="M" class="form-check-label">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="F" name="gen">
+                        <label for="F" class="form-check-label">Female</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="dnd" name="gen">
+                        <label for="dnd" class="form-check-label">Do no Disclose</label>
+                    </div>
+                </div>
+                
+                <div class="container mt-1" id="hobby">
+                    <label for="hob" class="form-label">Hobbies:</label>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="Dance" name="hob">
+                        <label for="Dance" class="form-check-label">Dancing</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="Swim" name="hob">
+                        <label for="Swim" class="form-check-label">Swimming</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input type="checkbox" class="form-check-input" id="Watch" name="hob">
+                        <label for="Watch" class="form-check-label">Binge Watching</label>
+                    </div>
+                </div>
+                
+                <div class="container mt-1" id="address">
+                    <label for="add" class="form-label">Address:</label>
+                    <textarea id="add" class="form-control" placeholder="Enter Address"></textarea>
+                </div>
+                
+                <div class="container mt-1" id="countryy">
+                    <label for="country" class="form-label">Country:</label>
+                    <select id="country" class="form-select">
+                        <option selected hidden>--Select Country</option>
+                        <option>India</option>
+                        <option>Russia</option>
+                        <option>USA</option>
+                    </select>
+                </div>
+                
+                <div class="container mt-2" id="buts">
+                    <input type="submit" class="bg-success" value="Save" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <input type="reset" class="bg-danger" value="Reset">
+                </div>
             </fieldset>
         </form>
+    </div>
+    <div class="container">
+        <div class="modal fade" id="modal2" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title">
+                            Login
+                        </h1>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mt-1">
+                            <div class="col-3">
+                                <label for="fname" class="form">First Name:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="fname" placeholder="Enter first Name" required>
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-3">
+                                <label for="lname" class="form-label">Last Name:</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="lname" placeholder="Enter Last Name" required>
+                            </div>
+                        </div>
+                        <!-- form-control-lg/form-control-sm -->   
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal1">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html> 
