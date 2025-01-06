@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<body>
+    <h1 class="ab">Good Morning!</h1>
+    <p class="ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, sequi!</p>
+    <div id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero eligendi mollitia ducimus? Natus possimus sed omnis voluptatibus eum asperiores vero?</div>
+    <p class="ab"><strong>second</strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, iusto.</p>
+    <script>
+        console.log(document.getElementById("demo"))
+        console.log(document.getElementById("demo").innerText)
+        console.log(document.getElementsByTagName("p"))
+        console.log(document.getElementsByClassName("ab"))
+        console.log(document.querySelector("p.ab"))
+        console.log(document.querySelectorAll("p.ab"))
+    </script>
+</body>
+</html>
