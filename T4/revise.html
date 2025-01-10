@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        button {
+            margin: 5px;
+        }
+        .demo {
+            height: 200px;
+            width: 200px;
+            font-size: 50px;
+            border: 3px solid red;
+            background-color: pink;
+            color: purple;
+            transition: all 2s;
+        }
+        .demo:hover {
+            transform: rotate(90deg);
+            color: pink;
+            background-color: purple;
+        }
+        .a {
+            color: red;
+            background-color: grey;
+            font-size: 30px;
+        }
+        .b {
+            color: green;
+            background-color: lime;
+            font-weight: bold;
+            font-size: 30px;
+            border: 3px double green;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello World</div>
+    <div id="abc">Same text in id</div>
+    <div class="myclass">Some text</div>
+    <div class="myclass">Some class text</div>
+    <div class="myclass">Last some text</div>
+    <div class="b">replace kiya isko</div>
+    <p>Some paragraph</p>
+    <button ondblclick="fun1()">Change text</button>
+    <script>
+        function fun1() {
+            var a = document.getElementById("abc")
+            a.innerHTML="<b>"+prompt("What new text you want to add??")+"</b>"
+        }
+        </script>
+    <button onclick="fun2()">Show text</button>
+    <script>
+        function fun2() {
+            var divs = document.getElementsByTagName("div")
+            // for (const element of divs) {
+            //     document.write(element)
+            // }
+            // for (let index = 0; index < divs.length; index++) {
+            //     document.write(divs[index].innerHTML)
+            // }
+            let s = ""
+            for (const element of divs) {
+                s+=element.innerHTML+"<br>"
+            }
+            document.write(s)
+        }
+    </script>
+    <button onclick="fun3()">Change all text</button>
+    <button onclick="fun4()">Change all attributes</button>
+    <script>
+        function fun4() {
+            var d1 = document.getElementsByClassName("myclass")
+            for (let index = 0; index < d1.length; index++) {
+                // d1[0].align="center"
+                var a = d1[0].getAttribute("align")
+                console.log(a)
+                if (a=="center") {
+                    d1[0].setAttribute("align","right")
+                } else {
+                    d1[0].setAttribute("align","center")
+                }
+            }
+        }
+    </script>
+    <button onclick="fun5()">Change styles</button>
+    <script>
+        function fun5() {
+            var d1 = document.getElementsByClassName("myclass")
+            // d1[0].classList.add("d-none")
+            d1[0].classList.add("bg-danger")
+            d1[0].classList.add("font-size")
+            d1[0].style.color="yellow"
+            d1[0].style.fontSize="50px"
+        }
+    </script>
+    <button onclick="fun6()">Change class</button>
+    <script>
+        function fun6() {
+            var p = document.getElementsByTagName("p")
+            p[0].setAttribute("style", "color: red; background-color: lime; font-size:30px; text-transform:uppercase;")
+        }
+    </script>
+    <button onclick="fun7()">Add element</button>
+    <script>
+        function fun7() {
+            var d1 = document.getElementsByTagName("div")
+            d1[0].classList.add("demo")
+        }
+    </script>
+    <button onclick="fun8()">Add class</button>
+    <script>
+        function fun8() {
+            var newdiv = document.createElement("div")
+            newdiv.classList.add("added")
+            newdiv.style.float="left"
+            newdiv.style.backgroundColor="Yellow"
+            newdiv.style.color="green"
+            newdiv.style.width="70px"
+            newdiv.style.height="70px"
+            newdiv.innerHTML="Some new text"
+            document.body.appendChild(newdiv)
+        }
+        </script>
+        <php
+        
+        ?>
+    <button onclick="fun10()">remove class</button>
+    <script>
+        function fun10() {
+            var newdiv = document.getElementsByClassName("added")
+            document.body.removeChild(newdiv[0])
+        }
+    </script>
+    <button onclick="fun9()">Replace element</button>
+    <!-- write a js which changes a class of an ele having class "b" to class "a" and vice-versa-->
+    <script>
+        function fun9() {
+            var div1 = document.getElementsByClassName("b")
+            var div2 = document.getElementsByClassName("a")
+            // console.log(div1,div2)+
+            if (div1.length != 0) {
+                div1[0].classList.add("a")
+                div1[0].classList.remove("b")
+            } else if (div2.length!=0) {
+                div2[0].classList.add("b")
+                div2[0].classList.remove("a")
+            }
+        }
+    </script>
+</body>
+</html>
