@@ -47,6 +47,7 @@
     <div class="myclass">Last some text</div>
     <div class="b">replace kiya isko</div>
     <p>Some paragraph</p>
+    <div class="tobereplaced">replace kiya isko</div>
     <button ondblclick="fun1()">Change text</button>
     <script>
         function fun1() {
@@ -127,17 +128,10 @@
             document.body.appendChild(newdiv)
         }
         </script>
-        <php
+        <php 
         
         ?>
-    <button onclick="fun10()">remove class</button>
-    <script>
-        function fun10() {
-            var newdiv = document.getElementsByClassName("added")
-            document.body.removeChild(newdiv[0])
-        }
-    </script>
-    <button onclick="fun9()">Replace element</button>
+    <button onclick="fun9()">Replace class</button>
     <!-- write a js which changes a class of an ele having class "b" to class "a" and vice-versa-->
     <script>
         function fun9() {
@@ -152,6 +146,27 @@
                 div2[0].classList.remove("a")
             }
         }
-    </script>
+        </script>
+        <button onclick="fun10()">remove class</button>
+        <script>
+            function fun10() {
+                var newdiv = document.getElementsByClassName("added")
+                // document.body.removeChild(newdiv[0])
+                newdiv[0].parentNode.removeChild(newdiv[0])
+            }
+        </script>
+        <button onclick="fun11()">replace element</button>
+        <script>
+            function fun11() {
+                var oldele = document.getElementsByClassName("tobereplaced")
+                if (oldele.length>0) {
+                    oldele=oldele[0]
+                }
+                var newele = document.createElement("button")
+                newele.innerText="My button"
+                newele.classList.add("bg-danger")
+                document.body.replaceChild(newele,oldele)
+            }
+        </script>
 </body>
 </html>
