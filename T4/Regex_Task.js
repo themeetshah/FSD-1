@@ -6,12 +6,11 @@ function validateForm() {
     const email = document.getElementById("email").value;
     const special = document.getElementById("special").value;
 
-    // Regex patterns
-    const usernamePattern = /^[a-zA-Z0-9]{4,19}$/;
-    const passwordPattern = /^$/;
+    const usernamePattern = /^[a-zA-Z][a-zA-Z0-9]{7,15}$/;
+    const passwordPattern = /[a-zA-Z0-9]\w/;
     const mobilePattern = /^\d{10}$/;
-    const cityPattern = /^Ahm.*d$/;
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const cityPattern = /^(Ahm).*d$/;
+    const emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const specialPattern = /^[a-zA-Z0-9]*$/;
 
     if (!username || !password || !mobile || !city || !email || !special) {
@@ -19,9 +18,8 @@ function validateForm() {
         return;
     }
 
-    // Validate fields
     if (!usernamePattern.test(username)) {
-        alert("Invalid username. It must start with a letter, contain no spaces, and be 5-20 characters long.");
+        alert("Invalid username. It must start with a letter, contain no spaces, and be 8-16 characters long.");
         return;
     }
 
