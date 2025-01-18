@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <script src="Regex_Task.js"></script>
+</head>
+<body>
+    <!-- Username can have both chars and nums but it must start with a character -->
+    <!-- It must not contain a space -->
+    <!-- Verify it's length -->
+    <!-- Password: 1-Upper, 1-digit, 1-special char -->
+    <!-- Mobile number: 10 digits -->
+    <!-- City: starts with Ahm and ends with d -->
+    <!-- Email: @ and . -->
+    <!-- Special: no special char -->
+    <!-- validate -->
+     <!-- everything is necessary -->
+    <h1>Validation Form</h1>
+    <form id="task1">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+        
+        <label for="password">Password:</label>
+        <input type="text" id="password" name="password">
+        <br><br>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile">
+        <br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <br><br>
+
+        <label for="special">Special:</label>
+        <input type="text" id="special" name="special">
+        <br><br>
+
+        <button type="button" onclick="validateForm()">Validate</button>
+    </form>
+</body>
+</html>
